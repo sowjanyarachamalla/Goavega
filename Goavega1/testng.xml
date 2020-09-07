@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Exception Suite">
+  <test thread-count="5" name="Example Test Case">
+    <classes>
+      <class name="SkipExample.Example"/>
+    </classes>
+  </test> <!-- Example Test Case -->
+</suite> <!-- Exception Suite -->
