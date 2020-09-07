@@ -33,14 +33,6 @@ public class LogingoaVega {
 	
 	driver.findElement(By.xpath("//*[@id=\"Email\"]")).sendKeys("java");
 	
-	String ActualTitle = driver.findElement(By.xpath("//*[@id=\"Email\"]")).getText();
-	
-	String ExpectedTitle = "java";
-	
-	//Assert.assertEquals(ActualTitle,ExpectedTitle);
-	
-	System.out.println("Username is correct");
-	
 	Thread.sleep(1000);
 	
 	driver.findElement(By.xpath("//*[@id=\"Password\"]")).clear();
@@ -111,8 +103,8 @@ public class LogingoaVega {
 	Country.selectByVisibleText("India");
 	
 	Thread.sleep(3000);
-   // Select State= new Select(driver.findElement(By.xpath("//select[contains(@id,'0925')]")));
-    //State.selectByVisibleText("Karnataka");
+ Select State= new Select(driver.findElement(By.xpath("//option[text()='Select State']//parent::select")));
+ State.selectByVisibleText("Karnataka");
 	
 	driver.findElement(By.xpath("//*[contains(@id,'ee823')]")).sendKeys("Bengaluru");
 	driver.findElement(By.xpath("//*[contains(@id,'c6c9')]")).sendKeys("560036");
